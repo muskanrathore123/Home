@@ -1,0 +1,103 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="navbar nav navbar-expand-xl navbar-dark bg-dark ">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item col-xs-3">
+              <button class="btn btn-outline-secondary " id="b1" type="button ">Home</button>
+              <button class="btn btn-outline-secondary  " id="b2" type="button">Page Us</button>
+              <button class="btn btn-outline-secondary " id="b3" type="button">Images</button>
+              <button class="btn btn-outline-secondary dropdown dropdown-toggle " id="b4" type="button">languages</button>
+              <ul class="dropdown-menu" id="ul">
+                <li><a href="#" class="dropdown-item"  id="h1">html</a></li>
+                <li><a href="#" class="dropdown-item"id="c1">css   </a></li>
+            </ul>
+    </div>
+    <div class="bg-danger "  id="d1" style="display: none; height: 400px; width: 1000px;">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ad magni laboriosam fuga architecto minima, expedita tempora, eos totam veritatis illum sit. Beatae quo nam adipisci, accusamus ex esse autem!
+    </div>
+    <div class="bg-warning "  id="d2" style="display: none; height: 400px; width: 1000px;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ad magni laboriosam fuga architecto minima, expedita tempora, eos totam veritatis illum sit. Beatae quo nam adipisci, accusamus ex esse autem!
+            </div>
+            <div  id="d3" style="display: none; height: 400px; width: 1000px;">
+                <img id="i1"  width="800px" height="500px" src="https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples-768x576.jpg" data-src="https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples-768x576.jpg" class="attachment-750x0 size-750x0 wp-post-image lazyloaded" alt="sample website" decoding="async" data-srcset="https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples-768x576.jpg 768w, https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples-300x225.jpg 300w, https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples.jpg 1024w" data-sizes="(max-width: 750px) 100vw, 750px" title="6 Best Homepage Design Examples and Ideas for Your Website 1" sizes="(max-width: 750px) 100vw, 750px" srcset="https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples-768x576.jpg 768w, https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples-300x225.jpg 300w, https://monsterhost.com/wp-content/uploads/2020/10/best-homepage-design-examples.jpg 1024w" draggable="false">
+                    </div>
+                    <div class="bg-success"id="p1"style="display: none; height: 400px; width: 1000px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, eum fugiat nulla hic accusantium dolores facilis enim suscipit deserunt deleniti incidunt sunt ea. Voluptas non ex reiciendis et fugit.
+                    </div>
+                    <div class="bg-danger"id="p2"style="display: none; height: 400px; width: 1000px;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci, eum fugiat nulla hic accusantium dolores facilis enim suscipit deserunt deleniti incidunt sunt ea. Voluptas non ex reiciendis et fugit.
+                    </div>
+                    
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#d2").hide();
+                $("#d3").hide();
+                $("#p1").hide();
+                $("#p2").hide();
+                $("#ul").hide();
+
+                $("#d1").show(3000);
+                
+            })
+        });
+        $(document).ready(function(){
+            $("#b2").click(function(){
+                $("#d1").hide();
+                $("#d3").hide();
+                $("#p1").hide();
+                $("#p2").hide();
+                $("#ul").hide();
+
+                $("#d2").show(3000);
+            })
+        });
+        $(document).ready(function(){
+            $("#b3").click(function(){
+                $("#d1").hide();
+                $("#d2").hide();
+                $("#p1").hide();
+                $("#p2").hide();
+                $("#ul").hide();
+
+                $("#d3").show(3000);
+            })
+        });
+        $(document).ready(function(){
+            $("#b4").click(function(){
+                $("#d1").hide();
+                $("#d2").hide();
+                $("#d3").hide();
+                $("#p1").hide();
+                $("#p2").hide();
+                $("#ul").hide();
+                $("#ul").show(1000);
+            })
+            $("#h1").click(function(){
+                $("#d1").hide();
+                $("#d2").hide();
+                $("#d3").hide();
+                $("#ul").hide(1000);
+                $("#p1").show();
+                
+            })
+            $("#c1").click(function(){
+                $("#d1").hide();
+                $("#d2").hide();
+                $("#d3").hide();
+
+                $("#ul").hide();
+                $("#p1").hide();
+                $("#p2").show();
+                
+            })
+        });
+    </script>
+</body>
+</html>
